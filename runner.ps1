@@ -1,6 +1,6 @@
 $frames = @()
-for ($i = 1; $i -le 100; $i++) {
-    $frames += "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/ASCII($i).txt"
+for ($i = 1; $i -le 200; $i++) {
+    $frames += "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frames/ASCII($i).txt"
 }
 
 while ($true) {
