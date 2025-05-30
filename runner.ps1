@@ -1,11 +1,7 @@
-$frames = @(
-    "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame1.txt",
-     "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame2.txt",
-      "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame3.txt",
-       "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame4.txt",
-    "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame5.txt"
-    # Add more URLs here
-)
+$frames = @()
+for ($i = 1; $i -le 100; $i++) {
+    $frames += "https://raw.githubusercontent.com/SuperlySuperKid/Merp-In-Powershell/main/frame$i.txt"
+}
 
 while ($true) {
     foreach ($url in $frames) {
